@@ -1910,7 +1910,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:real val="4.8000000000000007"/>
       </dia:attribute>
       <dia:attribute name="name">
-        <dia:string>#Event#</dia:string>
+        <dia:string>#EventType#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
