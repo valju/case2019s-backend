@@ -858,13 +858,13 @@
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O3">
       <dia:attribute name="obj_pos">
-        <dia:point val="47.1261,0.8034"/>
+        <dia:point val="46.5761,2.6034"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="47.0761,0.7534;58.4561,6.4534"/>
+        <dia:rectangle val="46.5261,2.5534;57.9061,8.2534"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="47.1261,0.8034"/>
+        <dia:point val="46.5761,2.6034"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="11.279999999999999"/>
@@ -1379,17 +1379,17 @@
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="47.1261,3.5034"/>
+        <dia:point val="46.5761,5.3034"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="42.3467,2.7034;47.1761,7.31599"/>
+        <dia:rectangle val="42.3467,4.5034;46.6261,7.31599"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="47.1261,3.5034"/>
-        <dia:point val="42.3967,3.5034"/>
+        <dia:point val="46.5761,5.3034"/>
+        <dia:point val="42.3967,5.3034"/>
         <dia:point val="42.3967,7.26599"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
@@ -1579,17 +1579,17 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="30.7972,-4.32974"/>
+        <dia:point val="30.3972,-3.72974"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="24.3095,-5.12974;30.8472,-2.93309"/>
+        <dia:rectangle val="24.3095,-4.53309;30.4472,-2.92974"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="30.7972,-4.32974"/>
-        <dia:point val="27.4304,-4.32974"/>
+        <dia:point val="30.3972,-3.72974"/>
+        <dia:point val="27.4304,-3.72974"/>
         <dia:point val="27.4304,-3.73309"/>
         <dia:point val="24.3595,-3.73309"/>
       </dia:attribute>
@@ -2233,16 +2233,16 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
     </dia:object>
     <dia:object type="UML - Note" version="0" id="O22">
       <dia:attribute name="obj_pos">
-        <dia:point val="47.2262,7.79024"/>
+        <dia:point val="46.3046,10.347"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="47.1512,7.71524;55.1312,9.56524"/>
+        <dia:rectangle val="46.2296,10.272;54.2096,12.122"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="47.2262,7.79024"/>
+        <dia:point val="46.3046,10.347"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="7.8299999999999992"/>
@@ -2271,7 +2271,7 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="47.5762,8.97274"/>
+            <dia:point val="46.6546,11.5295"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -2284,14 +2284,14 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O23">
       <dia:attribute name="obj_pos">
-        <dia:point val="52.7661,6.4034"/>
+        <dia:point val="52.2161,8.2034"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="51.0707,6.33291;52.8366,7.86073"/>
+        <dia:rectangle val="50.1489,8.13273;52.2868,10.4177"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="52.7661,6.4034"/>
-        <dia:point val="51.1412,7.79024"/>
+        <dia:point val="52.2161,8.2034"/>
+        <dia:point val="50.2196,10.347"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -2306,13 +2306,13 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O24">
       <dia:attribute name="obj_pos">
-        <dia:point val="30.7972,-6.22974"/>
+        <dia:point val="30.3972,-5.62974"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="30.7472,-6.27974;42.8972,-1.37974"/>
+        <dia:rectangle val="30.3472,-5.67974;42.4972,-0.779738"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="30.7972,-6.22974"/>
+        <dia:point val="30.3972,-5.62974"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="12.050000000000001"/>
@@ -2545,17 +2545,17 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="36.8222,-1.42974"/>
+        <dia:point val="36.4222,-0.829738"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="36.2372,-2.22974;38.1117,2.96599"/>
+        <dia:rectangle val="36.3217,-1.62974;38.1117,2.96599"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="36.8222,-1.42974"/>
-        <dia:point val="36.5062,-1.42974"/>
+        <dia:point val="36.4222,-0.829738"/>
+        <dia:point val="36.5062,-0.829738"/>
         <dia:point val="36.5062,2.16599"/>
         <dia:point val="36.3717,2.16599"/>
       </dia:attribute>
