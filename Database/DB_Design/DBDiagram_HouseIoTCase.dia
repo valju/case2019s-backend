@@ -1443,7 +1443,7 @@
           <dia:attribute name="string">
             <dia:string>#Database Diagram - House IoT case
 
-created 2019-10-03 JV, modified 2019-10-03 JV
+created 2019-10-03 JV, modified 2019-10-07 JV
 
 AK = UNIQUE NOT NULL
 * = column that might contain NULL in final version
