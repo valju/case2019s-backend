@@ -513,7 +513,7 @@
             <dia:string>#areaId#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#INTEGER {FK1, AK1}#</dia:string>
+            <dia:string>#INTEGER {FK1}#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -536,7 +536,7 @@
             <dia:string>#name#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#VARCHAR(320) {AK1}#</dia:string>
+            <dia:string>#VARCHAR(320) {AK}#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -861,13 +861,13 @@
         <dia:point val="46.5761,2.6034"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="46.5261,2.5534;57.9061,8.2534"/>
+        <dia:rectangle val="46.5261,2.5534;58.6761,8.2534"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="46.5761,2.6034"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="11.279999999999999"/>
+        <dia:real val="12.050000000000001"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="5.5999999999999996"/>
@@ -1011,7 +1011,7 @@
             <dia:string>#description#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#VARCHAR(320) *#</dia:string>
+            <dia:string>#VARCHAR(20000) *#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -1367,7 +1367,7 @@
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="role_b">
-        <dia:string>#NNN#</dia:string>
+        <dia:string>#DNA#</dia:string>
       </dia:attribute>
       <dia:attribute name="multipicity_b">
         <dia:string>#0..*#</dia:string>
@@ -1415,7 +1415,7 @@
         <dia:point val="2.58956,-14.6804"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.51456,-14.7554;31.6696,-6.5054"/>
+        <dia:rectangle val="2.53956,-14.7304;31.6446,-6.5304"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1567,7 +1567,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="role_b">
-        <dia:string>#NNN#</dia:string>
+        <dia:string>#DNA#</dia:string>
       </dia:attribute>
       <dia:attribute name="multipicity_b">
         <dia:string>#0..*#</dia:string>
@@ -1709,7 +1709,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="role_b">
-        <dia:string>#NNN#</dia:string>
+        <dia:string>#DCA#</dia:string>
       </dia:attribute>
       <dia:attribute name="multipicity_b">
         <dia:string>#0..*#</dia:string>
@@ -1828,7 +1828,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:point val="44.3636,-11.6924"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="44.2886,-11.7674;56.5036,-6.7174"/>
+        <dia:rectangle val="44.3136,-11.7424;56.4786,-6.7424"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -2108,7 +2108,7 @@ access#</dia:string>
         <dia:point val="2.5262,20.025"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.4512,19.95;52.3962,29"/>
+        <dia:rectangle val="2.4762,19.975;52.3712,28.975"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -2168,7 +2168,7 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
         <dia:point val="8.32,17.525"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="8.245,17.45;16.225,19.3"/>
+        <dia:rectangle val="8.27,17.475;16.2,19.275"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -2241,7 +2241,7 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
         <dia:point val="46.3046,10.347"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="46.2296,10.272;54.2096,12.122"/>
+        <dia:rectangle val="46.2546,10.297;54.1846,12.097"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -2289,13 +2289,13 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O23">
       <dia:attribute name="obj_pos">
-        <dia:point val="52.2161,8.2034"/>
+        <dia:point val="52.6011,8.2034"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="50.1489,8.13273;52.2868,10.4177"/>
+        <dia:rectangle val="50.149,8.13279;52.6717,10.4176"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="52.2161,8.2034"/>
+        <dia:point val="52.6011,8.2034"/>
         <dia:point val="50.2196,10.347"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -2538,7 +2538,7 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="role_b">
-        <dia:string>#NNN#</dia:string>
+        <dia:string>#DNA#</dia:string>
       </dia:attribute>
       <dia:attribute name="multipicity_b">
         <dia:string>#0..*#</dia:string>
