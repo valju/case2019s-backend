@@ -68,13 +68,13 @@
         <dia:point val="17.0552,9.2698"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="17.0052,9.2198;28.7702,18.9198"/>
+        <dia:rectangle val="17.0052,9.2198;29.5402,18.9198"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="17.0552,9.2698"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="11.665000000000001"/>
+        <dia:real val="12.434999999999999"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="9.5999999999999996"/>
@@ -356,7 +356,7 @@
             <dia:string>#changedUrgency#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#INTEGER*#</dia:string>
+            <dia:string>#INTEGER {FK3}*#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -1107,10 +1107,10 @@
     </dia:object>
     <dia:object type="Standard - Text" version="1" id="O4">
       <dia:attribute name="obj_pos">
-        <dia:point val="22.8877,14.0698"/>
+        <dia:point val="23.2727,14.0698"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="22.8877,13.4298;22.8877,14.2023"/>
+        <dia:rectangle val="23.2727,13.4298;23.2727,14.2023"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -1124,7 +1124,7 @@
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="22.8877,14.0698"/>
+            <dia:point val="23.2727,14.0698"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -1746,7 +1746,7 @@ In this diagram all are UNA by default if not stated otherwise!#</dia:string>
         <dia:point val="36.1263,8.12979"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="28.6702,8.07979;36.7113,13.5698"/>
+        <dia:rectangle val="29.4402,8.07979;36.7113,13.5698"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1754,7 +1754,7 @@ In this diagram all are UNA by default if not stated otherwise!#</dia:string>
       <dia:attribute name="orth_points">
         <dia:point val="36.1263,8.12979"/>
         <dia:point val="36.1263,12.7698"/>
-        <dia:point val="28.7202,12.7698"/>
+        <dia:point val="29.4902,12.7698"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -1812,18 +1812,18 @@ In this diagram all are UNA by default if not stated otherwise!#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="13.7373,14.0727"/>
+        <dia:point val="14.1223,14.0727"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.6873,13.2698;17.0548,14.8727"/>
+        <dia:rectangle val="14.0723,13.2698;17.0548,14.8727"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="13.7373,14.0727"/>
-        <dia:point val="15.3711,14.0727"/>
-        <dia:point val="15.3711,14.0698"/>
+        <dia:point val="14.1223,14.0727"/>
+        <dia:point val="15.5636,14.0727"/>
+        <dia:point val="15.5636,14.0698"/>
         <dia:point val="17.0048,14.0698"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
@@ -1937,13 +1937,13 @@ isAdminArea: true#</dia:string>
         <dia:point val="2.02193,11.6727"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="1.97193,11.6227;13.7369,16.5227"/>
+        <dia:rectangle val="1.97193,11.6227;14.1219,16.5227"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="2.02193,11.6727"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="11.665000000000001"/>
+        <dia:real val="12.050000000000001"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="4.8000000000000007"/>
@@ -2110,7 +2110,7 @@ isAdminArea: true#</dia:string>
             <dia:string>#defaultUrgency#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#INTEGER#</dia:string>
+            <dia:string>#INTEGER {FK1}#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -2248,13 +2248,13 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O21">
       <dia:attribute name="obj_pos">
-        <dia:point val="7.85443,16.4727"/>
+        <dia:point val="8.04693,16.4727"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.7911,16.4094;11.2078,17.6429"/>
+        <dia:rectangle val="7.98302,16.4088;11.2084,17.6434"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="7.85443,16.4727"/>
+        <dia:point val="8.04693,16.4727"/>
         <dia:point val="11.1445,17.5795"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -2616,13 +2616,13 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O26">
       <dia:attribute name="obj_pos">
-        <dia:point val="2.03011,3.63379"/>
+        <dia:point val="2.22095,4.64251"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="1.98011,3.58379;13.7451,7.68379"/>
+        <dia:rectangle val="2.17095,4.59251;13.9359,8.69251"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="2.03011,3.63379"/>
+        <dia:point val="2.22095,4.64251"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="11.665000000000001"/>
@@ -2832,19 +2832,19 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="7.86261,7.63379"/>
+        <dia:point val="8.05345,8.64251"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.80443,7.58379;9.59443,11.7227"/>
+        <dia:rectangle val="7.99693,8.59251;9.78693,11.7227"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="7.86261,7.63379"/>
-        <dia:point val="7.86261,9.65327"/>
-        <dia:point val="7.85443,9.65327"/>
-        <dia:point val="7.85443,11.6727"/>
+        <dia:point val="8.05345,8.64251"/>
+        <dia:point val="8.05345,10.1576"/>
+        <dia:point val="8.04693,10.1576"/>
+        <dia:point val="8.04693,11.6727"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -2903,18 +2903,18 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="13.6951,5.53379"/>
+        <dia:point val="13.8859,6.54251"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.6451,4.73379;24.6277,9.3198"/>
+        <dia:rectangle val="13.8359,5.74251;25.0127,9.3198"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="13.6951,5.53379"/>
-        <dia:point val="22.8877,5.53379"/>
-        <dia:point val="22.8877,9.2698"/>
+        <dia:point val="13.8859,6.54251"/>
+        <dia:point val="23.2727,6.54251"/>
+        <dia:point val="23.2727,9.2698"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="0"/>
@@ -2936,16 +2936,16 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
     </dia:object>
     <dia:object type="UML - Note" version="0" id="O29">
       <dia:attribute name="obj_pos">
-        <dia:point val="13.9662,0.63264"/>
+        <dia:point val="21.4361,2.56829"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.8912,0.55764;21.8712,2.40764"/>
+        <dia:rectangle val="21.3611,2.49329;29.3411,4.34329"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="13.9662,0.63264"/>
+        <dia:point val="21.4361,2.56829"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="7.8299999999999992"/>
@@ -2974,7 +2974,7 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="14.3162,1.81514"/>
+            <dia:point val="21.7861,3.75079"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -2987,14 +2987,14 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O30">
       <dia:attribute name="obj_pos">
-        <dia:point val="13.6951,4.33379"/>
+        <dia:point val="13.9341,5.54639"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.6284,2.26596;17.9478,4.40047"/>
+        <dia:rectangle val="13.8758,4.10345;21.4208,5.6047"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="13.6951,4.33379"/>
-        <dia:point val="17.8812,2.33264"/>
+        <dia:point val="13.9341,5.54639"/>
+        <dia:point val="21.3624,4.16176"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="2"/>
@@ -3003,8 +3003,8 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:enum val="1"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O26" connection="4"/>
-        <dia:connection handle="1" to="O29" connection="6"/>
+        <dia:connection handle="0" to="O26" connection="14"/>
+        <dia:connection handle="1" to="O29" connection="8"/>
       </dia:connections>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O31">
@@ -3028,6 +3028,60 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:connection handle="0" to="O3" connection="18"/>
         <dia:connection handle="1" to="O16" connection="8"/>
       </dia:connections>
+    </dia:object>
+    <dia:object type="UML - Note" version="0" id="O32">
+      <dia:attribute name="obj_pos">
+        <dia:point val="1.97059,-0.130714"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="1.89559,-0.205714;19.8856,4.04429"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="1.97059,-0.130714"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="17.840000000000003"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="4.0999999999999996"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000149011612"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#bfbfbf"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#Natural division has at least three classes:
+1. immediate action
+2. action during next workday
+3. informative (affects future decisions)#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="monospace" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.80000000000000004"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="2.32059,1.05179"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
     </dia:object>
   </dia:layer>
 </dia:diagram>
