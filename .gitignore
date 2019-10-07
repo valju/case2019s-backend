@@ -62,3 +62,6 @@ typings/
 
 # Dia temporary files
 .dia~
+
+# Temporary files
+*~
