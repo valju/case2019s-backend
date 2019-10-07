@@ -333,7 +333,7 @@
             <dia:string>#changedUrgency#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#INTEGER#</dia:string>
+            <dia:string>#INTEGER *#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -1031,7 +1031,7 @@
         </dia:composite>
         <dia:composite type="umlattribute">
           <dia:attribute name="name">
-            <dia:string>#isCommonArea#</dia:string>
+            <dia:string>#isCommonAreaType#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
             <dia:string>#BOOLEAN#</dia:string>
@@ -1825,22 +1825,22 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
     </dia:object>
     <dia:object type="UML - Note" version="0" id="O16">
       <dia:attribute name="obj_pos">
-        <dia:point val="37.6636,-12.7424"/>
+        <dia:point val="44.3636,-11.6924"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="37.5886,-12.8174;43.2586,-10.9674"/>
+        <dia:rectangle val="44.2886,-11.7674;56.5036,-6.7174"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="37.6636,-12.7424"/>
+        <dia:point val="44.3636,-11.6924"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="5.5199999999999996"/>
+        <dia:real val="12.065000000000001"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="1.7000000000000002"/>
+        <dia:real val="4.8999999999999995"/>
       </dia:attribute>
       <dia:attribute name="line_width">
         <dia:real val="0.10000000149011612"/>
@@ -1854,7 +1854,11 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
       <dia:attribute name="text">
         <dia:composite type="text">
           <dia:attribute name="string">
-            <dia:string>#Note example#</dia:string>
+            <dia:string>#isCommonArea = not part of
+private flats
+
+isAdminArea = only admins can
+access#</dia:string>
           </dia:attribute>
           <dia:attribute name="font">
             <dia:font family="monospace" style="0" name="Courier"/>
@@ -1863,7 +1867,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="38.0136,-11.5599"/>
+            <dia:point val="44.7136,-10.5099"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -1876,14 +1880,14 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O17">
       <dia:attribute name="obj_pos">
-        <dia:point val="31.95,-4.05"/>
+        <dia:point val="42.4472,-2.92974"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="31.8796,-11.1128;40.494,-3.97961"/>
+        <dia:rectangle val="42.3804,-6.85922;50.4629,-2.86292"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="31.95,-4.05"/>
-        <dia:point val="40.4236,-11.0424"/>
+        <dia:point val="42.4472,-2.92974"/>
+        <dia:point val="50.3961,-6.7924"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -1892,6 +1896,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:enum val="1"/>
       </dia:attribute>
       <dia:connections>
+        <dia:connection handle="0" to="O24" connection="11"/>
         <dia:connection handle="1" to="O16" connection="6"/>
       </dia:connections>
     </dia:object>
@@ -2027,7 +2032,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
             <dia:string>#name#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#VARCHAR {200}#</dia:string>
+            <dia:string>#VARCHAR (200) {AK}#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -2309,7 +2314,7 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
         <dia:point val="30.3972,-5.62974"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="30.3472,-5.67974;42.4972,-0.779738"/>
+        <dia:rectangle val="30.3472,-5.67974;42.4972,-0.77974"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="30.3972,-5.62974"/>
