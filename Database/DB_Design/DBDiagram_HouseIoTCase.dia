@@ -65,19 +65,19 @@
   <dia:layer name="Tausta" visible="true" active="true">
     <dia:object type="UML - Class" version="0" id="O0">
       <dia:attribute name="obj_pos">
-        <dia:point val="18.7052,9.2198"/>
+        <dia:point val="17.0552,9.2698"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="18.6552,9.1698;30.8052,18.0698"/>
+        <dia:rectangle val="17.0052,9.2198;29.1552,18.9198"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="18.7052,9.2198"/>
+        <dia:point val="17.0552,9.2698"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="12.050000000000001"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="8.7999999999999989"/>
+        <dia:real val="9.5999999999999996"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#Event#</dia:string>
@@ -169,6 +169,29 @@
       <dia:attribute name="attributes">
         <dia:composite type="umlattribute">
           <dia:attribute name="name">
+            <dia:string>#id#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#INTEGER {PK}#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="value">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="visibility">
+            <dia:enum val="1"/>
+          </dia:attribute>
+          <dia:attribute name="abstract">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="class_scope">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="umlattribute">
+          <dia:attribute name="name">
             <dia:string>#locationId#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
@@ -218,7 +241,7 @@
             <dia:string>#eventTimestamp#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#DATETIME {PK}#</dia:string>
+            <dia:string>#DATETIME#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -365,7 +388,7 @@
             <dia:string>##</dia:string>
           </dia:attribute>
           <dia:attribute name="visibility">
-            <dia:enum val="0"/>
+            <dia:enum val="1"/>
           </dia:attribute>
           <dia:attribute name="abstract">
             <dia:boolean val="false"/>
@@ -1084,10 +1107,10 @@
     </dia:object>
     <dia:object type="Standard - Text" version="1" id="O4">
       <dia:attribute name="obj_pos">
-        <dia:point val="24.7302,13.6198"/>
+        <dia:point val="23.0802,14.0698"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="24.7302,12.9798;24.7302,13.7523"/>
+        <dia:rectangle val="23.0802,13.4298;23.0802,14.2023"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -1101,7 +1124,7 @@
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="24.7302,13.6198"/>
+            <dia:point val="23.0802,14.0698"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -1115,7 +1138,7 @@
         <dia:enum val="3"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O0" connection="26"/>
+        <dia:connection handle="0" to="O0" connection="28"/>
       </dia:connections>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O5">
@@ -1724,15 +1747,15 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:point val="36.3717,8.56599"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="30.7052,8.51599;36.9567,12.7198"/>
+        <dia:rectangle val="29.0552,8.51599;36.9567,13.5698"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
         <dia:point val="36.3717,8.56599"/>
-        <dia:point val="36.3717,11.9198"/>
-        <dia:point val="30.7552,11.9198"/>
+        <dia:point val="36.3717,12.7698"/>
+        <dia:point val="29.1052,12.7698"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -1749,7 +1772,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O1" connection="6"/>
-        <dia:connection handle="1" to="O0" connection="11"/>
+        <dia:connection handle="1" to="O0" connection="13"/>
       </dia:connections>
     </dia:object>
     <dia:object type="UML - Association" version="2" id="O15">
@@ -1790,19 +1813,19 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="14.5954,13.6"/>
+        <dia:point val="13.1954,14.1"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="14.5454,12.8;18.7048,14.4198"/>
+        <dia:rectangle val="13.1454,13.2698;17.0548,14.9"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="14.5954,13.6"/>
-        <dia:point val="16.6251,13.6"/>
-        <dia:point val="16.6251,13.6198"/>
-        <dia:point val="18.6548,13.6198"/>
+        <dia:point val="13.1954,14.1"/>
+        <dia:point val="15.1001,14.1"/>
+        <dia:point val="15.1001,14.0698"/>
+        <dia:point val="17.0048,14.0698"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="0"/>
@@ -1820,7 +1843,7 @@ NNN in the diagram. E.g. DCA UNA#</dia:string>
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O18" connection="16"/>
-        <dia:connection handle="1" to="O0" connection="26"/>
+        <dia:connection handle="1" to="O0" connection="28"/>
       </dia:connections>
     </dia:object>
     <dia:object type="UML - Note" version="0" id="O16">
@@ -1902,13 +1925,13 @@ access#</dia:string>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O18">
       <dia:attribute name="obj_pos">
-        <dia:point val="2.495,11.2"/>
+        <dia:point val="1.095,11.7"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.445,11.15;14.595,16.05"/>
+        <dia:rectangle val="1.045,11.65;13.195,16.55"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="2.495,11.2"/>
+        <dia:point val="1.095,11.7"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="12.050000000000001"/>
@@ -2009,7 +2032,7 @@ access#</dia:string>
             <dia:string>#id#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#INTEGER {FK1}#</dia:string>
+            <dia:string>#INTEGER {PK}#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -2216,13 +2239,13 @@ So far we do not have the Alarms or Sensors or Actuators here!#</dia:string>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O21">
       <dia:attribute name="obj_pos">
-        <dia:point val="8.52,16"/>
+        <dia:point val="7.12,16.5"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="8.45476,15.9348;12.3002,17.5902"/>
+        <dia:rectangle val="7.06115,16.4412;12.2938,17.5838"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="8.52,16"/>
+        <dia:point val="7.12,16.5"/>
         <dia:point val="12.235,17.525"/>
       </dia:attribute>
       <dia:attribute name="numcp">
