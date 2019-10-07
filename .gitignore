@@ -65,3 +65,6 @@ typings/
 
 # Temporary files
 *~
+
+# Juhani's teacher script for heavy editing of Dia file
+autoPush.bat
