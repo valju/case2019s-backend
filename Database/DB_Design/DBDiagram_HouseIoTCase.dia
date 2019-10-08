@@ -658,7 +658,7 @@
         <dia:point val="2.68165,-6.43284"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.63165,-6.48284;12.8567,-0.782844"/>
+        <dia:rectangle val="2.63165,-6.48284;12.8567,-0.78284"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="2.68165,-6.43284"/>
@@ -1438,7 +1438,7 @@
         <dia:point val="2.26241,-16.7524"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.18741,-16.8274;39.4274,-9.37736"/>
+        <dia:rectangle val="2.18741,-16.8274;39.4274,-9.3774"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1660,7 +1660,7 @@ In this diagram all are UNA by default if not stated otherwise!#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="role_b">
-        <dia:string>#NNN#</dia:string>
+        <dia:string>#DCA#</dia:string>
       </dia:attribute>
       <dia:attribute name="multipicity_b">
         <dia:string>#0..*#</dia:string>
@@ -1672,16 +1672,16 @@ In this diagram all are UNA by default if not stated otherwise!#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="12.8067,-3.73284"/>
+        <dia:point val="12.8066,-3.73284"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.40543,-4.53309;16.7422,-2.93284"/>
+        <dia:rectangle val="12.7566,-4.53309;16.7422,-2.93284"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="12.8067,-3.73284"/>
+        <dia:point val="12.8066,-3.73284"/>
         <dia:point val="14.7494,-3.73284"/>
         <dia:point val="14.7494,-3.73309"/>
         <dia:point val="16.6922,-3.73309"/>
@@ -1800,7 +1800,7 @@ In this diagram all are UNA by default if not stated otherwise!#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="role_b">
-        <dia:string>#NNN#</dia:string>
+        <dia:string>#DNA#</dia:string>
       </dia:attribute>
       <dia:attribute name="multipicity_b">
         <dia:string>#0..*#</dia:string>
@@ -1850,7 +1850,7 @@ In this diagram all are UNA by default if not stated otherwise!#</dia:string>
         <dia:point val="43.6275,-16.7087"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="43.5525,-16.7837;56.9225,-3.73373"/>
+        <dia:rectangle val="43.5525,-16.7837;56.9225,-3.7337"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1915,11 +1915,11 @@ isAdminArea: true#</dia:string>
         <dia:point val="41.9531,-2.92974"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="41.8826,-4.41521;43.6231,-2.85916"/>
+        <dia:rectangle val="41.8825,-4.41521;43.623,-2.85916"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="41.9531,-2.92974"/>
-        <dia:point val="43.5525,-4.34463"/>
+        <dia:point val="43.5524,-4.34463"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -2619,7 +2619,7 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:point val="2.22095,4.64251"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.17095,4.59251;13.9359,8.69251"/>
+        <dia:rectangle val="2.17095,4.59251;13.936,8.69251"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="2.22095,4.64251"/>
@@ -2820,7 +2820,7 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="role_b">
-        <dia:string>#NNN#</dia:string>
+        <dia:string>#DNA#</dia:string>
       </dia:attribute>
       <dia:attribute name="multipicity_b">
         <dia:string>#0..*#</dia:string>
@@ -2852,7 +2852,7 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:enum val="1"/>
       </dia:attribute>
       <dia:attribute name="orth_autoroute">
-        <dia:boolean val="true"/>
+        <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="text_colour">
         <dia:color val="#000000"/>
@@ -2903,16 +2903,16 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="13.8859,6.54251"/>
+        <dia:point val="13.886,6.54251"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.8359,5.74251;25.0127,9.3198"/>
+        <dia:rectangle val="13.836,5.74251;25.0127,9.3198"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="13.8859,6.54251"/>
+        <dia:point val="13.886,6.54251"/>
         <dia:point val="23.2727,6.54251"/>
         <dia:point val="23.2727,9.2698"/>
       </dia:attribute>
@@ -2990,11 +2990,11 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
         <dia:point val="13.9341,5.54639"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.8758,4.10345;21.4208,5.6047"/>
+        <dia:rectangle val="13.8757,4.10345;21.4207,5.6047"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="13.9341,5.54639"/>
-        <dia:point val="21.3624,4.16176"/>
+        <dia:point val="21.3624,4.16177"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="2"/>
@@ -3009,14 +3009,14 @@ So far we do not have the Alarms or Sensors or Actuators here! Of course Alarm c
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O31">
       <dia:attribute name="obj_pos">
-        <dia:point val="51.0446,1.73608"/>
+        <dia:point val="51.0446,1.73609"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="50.6233,-3.78771;51.0978,1.78933"/>
+        <dia:rectangle val="50.6232,-3.7877;51.0978,1.78933"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="51.0446,1.73608"/>
-        <dia:point val="50.6765,-3.73447"/>
+        <dia:point val="51.0446,1.73609"/>
+        <dia:point val="50.6765,-3.73446"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
