@@ -14,4 +14,6 @@
 
 -- EventType
 
--- UrgencyType 
+-- UrgencyType
+DESCRIBE UrgencyType;
+SELECT * FROM UrgencyType;
