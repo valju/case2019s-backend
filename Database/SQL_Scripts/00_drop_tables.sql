@@ -17,4 +17,5 @@ DROP TABLE IF EXISTS LocationType;
 
 -- EventType
 
--- UrgencyType 
+-- UrgencyType
+DROP TABLE IF EXISTS UrgencyType; 
