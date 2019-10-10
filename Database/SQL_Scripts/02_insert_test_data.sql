@@ -9,6 +9,15 @@ VALUES
   (10, 'high', 'The value is high');
 
 -- EventType
+INSERT INTO EventType
+(name, description, defaultUrgency)
+VALUES
+('Gas leak', 'Gas security system does not work properly, causing the gas leak', 10),
+('Broken heating system', 'Heating system does not work properly, causing the indoor temperature to decrease', 20),
+('Lost electricity', 'Electricity system does not work properly, no electric in some apartments', 30),
+('Ventilation', 'Ventilation is broken, room air is stuffed', 40),
+('Fire', NULL, 50)
+;
 
 -- LocationType
 INSERT INTO LocationType
@@ -42,8 +51,28 @@ VALUES
 ;
 
 -- User
+INSERT INTO User
+(firstName, lastName, email, isAdmin)
+VALUES
+('John', 'Smith', 'jsmith@gmail.com', TRUE),
+('Juhani', 'Nurminen', 'jnurmi@mail.com', FALSE),
+('Anu', 'Karisto', 'akaris@yandex.com', FALSE),
+('Marie', 'Lin', 'mlin@hotmail.com', TRUE),
+('Nick', 'Brown', 'nickboy@gmail.com', FALSE),
+('Hari', 'Xhetri', 'xhetri@gmail.com', FALSE)
+;
 
 -- AreaUser     (NOT area_user anymore!)
+INSERT INTO AreaUser
+(areaId, userID)
+VALUES
+(1001, 102),
+(1002, 103),
+(1002, 101),
+(1003, 105),
+(1003, 104),
+(1003, 101)
+;
 
 -- Event
 INSERT INTO Event
