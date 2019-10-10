@@ -18,10 +18,6 @@ FROM
 /* More tests are comming */
 
 -- User
-
--- Location
-
--- Area
 SELECT
     *
 FROM
@@ -61,6 +57,10 @@ from
     User
 WHERE
     email LIKE '%gmail.com';
+-- Location
+
+-- Area
+
 -- LocationType
 
 -- EventType
