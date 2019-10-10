@@ -1,6 +1,7 @@
 -- DROP TABLES
 
 -- Event
+DROP TABLE IF EXISTS Event;
 
 -- AreaUser
 
