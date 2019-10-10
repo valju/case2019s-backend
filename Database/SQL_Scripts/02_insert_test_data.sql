@@ -46,3 +46,12 @@ VALUES
 -- AreaUser     (NOT area_user anymore!)
 
 -- Event
+INSERT INTO Event
+  (locationId, eventTypeId, eventTimestamp, valueText, valueInt, valueDecimal, valueBoolean, changedUrgency, isHandled)
+VALUES
+  (201, 11, '2019-10-09 09:08:22', 'Gas leak on location A', NULL, NULL, TRUE, TRUE, FALSE),
+  (202, 12, '2019-10-09 13:12:31', 'Broken heating system on location B', NULL, NULL, TRUE, TRUE, TRUE),
+  (203, 13, '2019-10-10 15:15:46', 'Lost electricity on location C', NULL, NULL, TRUE, TRUE, TRUE),
+  (204, 14, '2019-10-15 13:08:22', 'Ventilation malfunction on location D', NULL, NULL,TRUE, TRUE, FALSE),
+  (205, 15, '2019-11-24 00:00:00', 'Fire on location E', NULL, NULL, TRUE, TRUE, FALSE)
+;
