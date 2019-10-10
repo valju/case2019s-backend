@@ -17,7 +17,7 @@ VALUES
 ('Kitchen', 'Room for storing and preparing food.', FALSE, FALSE),
 ('Gym', 'Gym accessible to all tenands.', TRUE, FALSE),
 ('Electrical room', 'Room or space in a building dedicated to electrical equipment.', FALSE, TRUE),
-('Hallway', 'A long narrow passage inside a building with doors along it leading to rooms.'),
+('Hallway', 'A long narrow passage inside a building with doors along it leading to rooms.', TRUE, FALSE),
 ('Info panel', 'Panel on a wall of a hallway where information for the tenands is shown. Can only be accessed by admins.', TRUE, TRUE)
 ;
 
