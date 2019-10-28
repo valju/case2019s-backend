@@ -10,6 +10,21 @@ CREATE TABLE UrgencyType (
 ) ENGINE = InnoDB;
 
 -- EventType
+CREATE TABLE EventType (
+	id                        INTEGER     NOT NULL        AUTO_INCREMENT,
+	name			          VARCHAR(200)		NOT NULL 		UNIQUE,
+	description 	          VARCHAR(20000) 		,
+	defaultUrgency 			  INTEGER					NOT NULL,
+​
+	CONSTRAINT PK_EventType PRIMARY KEY (id),
+
+    CONSTRAINT FK_EventType_UrgencyType
+		FOREIGN KEY (defaultUrgency) REFERENCES UrgencyType(id)
+		ON DELETE RESTRICT
+		ON UPDATE RESTRICT
+​
+) ENGINE=InnoDB;
+ALTER TABLE Category AUTO_INCREMENT=11;
 
 -- LocationType
 CREATE TABLE LocationType (
@@ -60,8 +75,38 @@ CREATE TABLE Location (
 ALTER TABLE Location AUTO_INCREMENT=201;
 
 -- User
+CREATE TABLE User (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    firstName VARCHAR(200) NOT NULL,
+    lastName VARCHAR (200) NOT NULL,
+    email VARCHAR (320) NOT NULL UNIQUE,
+    isAdmin BOOLEAN NOT NULL DEFAULT FALSE,
+
+    CONSTRAINT PK_User PRIMARY KEY (id)
+    
+) ENGINE = InnoDB;
+ALTER TABLE User AUTO_INCREMENT = 1001;
 
 -- AreaUser     (NOT area_user anymore!)
+CREATE TABLE AreaUser (
+    areaId INTEGER NOT NULL,
+    userId INTEGER NOT NULL,
+
+    CONSTRAINT PK_AreaUser PRIMARY KEY (areaId, userId),
+
+    /*INDEX AreaUser_Area (userId), */
+    CONSTRAINT FK_AreaUser_Area
+        FOREIGN KEY (areaId) REFERENCES Area (id)
+        ON DELETE CASCADE
+        ON UPDATE RESTRICT,
+
+    /* we cannot update or change any userId or areaId */
+    CONSTRAINT FK_AreaUser_User
+        FOREIGN KEY (userId) REFERENCES User (id)
+        ON DELETE CASCADE
+        ON DELETE RESTRICT
+
+) ENGINE = InnoDB;
 
 -- Event
 CREATE TABLE Event (
@@ -92,4 +137,4 @@ CREATE TABLE Event (
 		ON UPDATE RESTRICT
 
 ) ENGINE=InnoDB;
-ALTER TABLE Event AUTO_INCREMENT=10001; 
+ALTER TABLE Event AUTO_INCREMENT=10001;
