@@ -1,3 +1,5 @@
+# Babel Build directory
+dist
 # Logs
 logs
 *.log
