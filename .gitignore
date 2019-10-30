@@ -1,3 +1,7 @@
+# Each developer's database settings: NOT tracked
+src/CONSTANTS.js
+# Babel Build directory
+dist
 # Logs
 logs
 *.log
