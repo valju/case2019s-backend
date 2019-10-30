@@ -8,7 +8,7 @@ const scriptFolder = './Database/SQL_Scripts/';
 const scriptFiles = [
   '00_drop_tables.sql',
   '01_create_tables.sql',
-  '02_insert_technical_test_data.sql',
+  '02_insert_test_data.sql',
 ];
 
 // read the SQL scripts from filepath
