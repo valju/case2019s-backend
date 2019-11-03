@@ -1,23 +1,23 @@
 -- INSERT TEST DATA
-
--- UrgencyType
-INSERT INTO
-  UrgencyType (id, name, description)
+-- Users
+INSERT INTO Users
+(firstName, lastName, email, isAdmin)
 VALUES
-  (30, 'low', 'The value is low'),
-  (20, 'medium', 'The value is medium'),
-  (10, 'high', 'The value is high');
-
--- EventType
-INSERT INTO EventType
-(name, description, defaultUrgency)
-VALUES
-('Gas leak', 'Gas security system does not work properly, causing the gas leak', 10),
-('Broken heating system', 'Heating system does not work properly, causing the indoor temperature to decrease', 20),
-('Lost electricity', 'Electricity system does not work properly, no electric in some apartments', 30),
-('Ventilation', 'Ventilation is broken, room air is stuffed', 40),
-('Fire', NULL, 50)
+('John', 'Smith', 'jsmith@gmail.com', TRUE),
+('Juhani', 'Nurminen', 'jnurmi@mail.com', FALSE),
+('Anu', 'Karisto', 'akaris@yandex.com', FALSE),
+('Marie', 'Lin', 'mlin@hotmail.com', TRUE),
+('Nick', 'Brown', 'nickboy@gmail.com', FALSE),
+('Hari', 'Xhetri', 'xhetri@gmail.com', FALSE)
 ;
+-- UrgencyType
+INSERT INTO
+    UrgencyType (id, name, description)
+VALUES
+(30, 'low', 'The value is low'),
+(20, 'medium', 'The value is medium'),
+(10, 'high', 'The value is high');
+
 
 -- LocationType
 INSERT INTO LocationType
@@ -49,18 +49,17 @@ VALUES
 (103, 'Electrical room', 'Room with electrical equipment for entire house.', 75.00, 23),
 (104, '4th floor Hallway', 'Hallway for the fourth floor. Doors to all appartments on the floor are located here.', 80.25, 24)
 ;
-
--- User
-INSERT INTO User
-(firstName, lastName, email, isAdmin)
+-- Event
+INSERT INTO Event
+(locationId, eventTypeId, eventTimestamp, valueText, valueInt, valueDecimal, valueBoolean, changedUrgency, isHandled)
 VALUES
-('John', 'Smith', 'jsmith@gmail.com', TRUE),
-('Juhani', 'Nurminen', 'jnurmi@mail.com', FALSE),
-('Anu', 'Karisto', 'akaris@yandex.com', FALSE),
-('Marie', 'Lin', 'mlin@hotmail.com', TRUE),
-('Nick', 'Brown', 'nickboy@gmail.com', FALSE),
-('Hari', 'Xhetri', 'xhetri@gmail.com', FALSE)
+(201, 11, '2019-10-09 09:08:22', 'Gas leak on location A', NULL, NULL, TRUE, 3, FALSE),
+(202, 12, '2019-10-09 13:12:31', 'Broken heating system on location B', NULL, NULL, TRUE, 2, TRUE),
+(203, 13, '2019-10-10 15:15:46', 'Lost electricity on location C', NULL, NULL, TRUE, 4, TRUE),
+(204, 14, '2019-10-15 13:08:22', 'Ventilation malfunction on location D', NULL, NULL,TRUE, 5, FALSE),
+(205, 15, '2019-11-24 00:00:00', 'Fire on location E', NULL, NULL, TRUE, 2, FALSE)
 ;
+
 
 -- AreaUser     (NOT area_user anymore!)
 INSERT INTO AreaUser
@@ -74,13 +73,15 @@ VALUES
 (1003, 101)
 ;
 
--- Event
-INSERT INTO Event
-  (locationId, eventTypeId, eventTimestamp, valueText, valueInt, valueDecimal, valueBoolean, changedUrgency, isHandled)
+
+
+-- EventType
+INSERT INTO EventType
+(name, description, defaultUrgency)
 VALUES
-  (201, 11, '2019-10-09 09:08:22', 'Gas leak on location A', NULL, NULL, TRUE, TRUE, FALSE),
-  (202, 12, '2019-10-09 13:12:31', 'Broken heating system on location B', NULL, NULL, TRUE, TRUE, TRUE),
-  (203, 13, '2019-10-10 15:15:46', 'Lost electricity on location C', NULL, NULL, TRUE, TRUE, TRUE),
-  (204, 14, '2019-10-15 13:08:22', 'Ventilation malfunction on location D', NULL, NULL,TRUE, TRUE, FALSE),
-  (205, 15, '2019-11-24 00:00:00', 'Fire on location E', NULL, NULL, TRUE, TRUE, FALSE)
+('Gas leak', 'Gas security system does not work properly, causing the gas leak', 10),
+('Broken heating system', 'Heating system does not work properly, causing the indoor temperature to decrease', 20),
+('Lost electricity', 'Electricity system does not work properly, no electric in some apartments', 30),
+('Ventilation', 'Ventilation is broken, room air is stuffed', 40),
+('Fire', NULL, 50)
 ;

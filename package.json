@@ -1,7 +1,7 @@
 {
   "name": "case2019s-backend",
   "version": "1.0.0",
-  "description": "Node-Express backend\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C-Knex-mysql-MariaDB backend for the Fall 2019 case",
+  "description": "Node-Express backend Fall 2019 case",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

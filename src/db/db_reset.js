@@ -18,7 +18,7 @@ export function getQueryFromFile() {
     query += fs.readFileSync((scriptFolder + scriptFiles[i]), "utf8", function (err, data) {
       if (err) throw err;
       return toString(data);
-    })
+    });
   }
   return query;
 }
@@ -33,20 +33,19 @@ async function getConnection() {
     database: DB_SETTINGS.database,
     multipleStatements: DB_SETTINGS.multipleStatements,
     debug: DB_SETTINGS.debug,
-  })
-};
+  });
+}
 
 // wait for connection promise to complete
 // then query remote db with the received client object
 getConnection()
-  .then(client => {
-    client.query(getQueryFromFile(),
-      function (err, results, fields) {
-        if (err) throw err;
-        console.log("database reset successful!");
-        client.end();
-      }
-    )
-  }).catch(err => {
+  .then((client) => {
+    client.query(getQueryFromFile(), function(err, results, fields) {
+      if (err) throw err;
+      console.log('database reset successful!');
+      client.end();
+    });
+  })
+  .catch((err) => {
     console.log(err);
   });

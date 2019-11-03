@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS Event;
 DROP TABLE IF EXISTS AreaUser;
 
 -- User
-DROP TABLE IF EXISTS User;
+DROP TABLE IF EXISTS Users;
 
 -- Location
 DROP TABLE IF EXISTS Location;
@@ -22,4 +22,4 @@ DROP TABLE IF EXISTS LocationType;
 DROP TABLE IF EXISTS EventType;
 
 -- UrgencyType
-DROP TABLE IF EXISTS UrgencyType; 
+DROP TABLE IF EXISTS UrgencyType;
