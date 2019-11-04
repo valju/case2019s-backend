@@ -1,28 +1,36 @@
 import express from 'express';
 import knex from '../../db/index';
 
-const urgencyType = express.Router();
+const area = express.Router();
 
-// GET
-/** http://localhost:8787/api/urgencyType/:id  with method=GET **/
+// GET ALL LOCATIONS
+/** http://localhost:8787/api/area/:id  with method=GET **/
 
-urgencyType.get('/all', function(req, res) {
+area.get('/all', function(req, res) {
   knex
-    .select('id', 'name', 'description')
-    .from('UrgencyType')
-    .then((data) => res.status(200).json(data))
-    .catch((err) => res.status(500).json({ error: err.message }));
+    .select()
+    .from('Area')
+    .then((data) =>
+      res
+        .status(200)
+        .send(data)
+    )
+    .catch((err) =>
+      res
+        .status(500)
+        .send({ error: err.message })
+    )
 });
 
 
-//GET BY CATEGORY
-// http://localhost:8787/api/urgencyType/:id  METHOD = GET
-// Example: http://localhost:8787/api/urgencyType/10
-urgencyType.get('/:id', function(req, res) {
+//GET BY Area ID
+// http://localhost:8787/api/area/:id  METHOD = GET
+// Example: http://localhost:8787/api/area/101
+area.get('/:id', function(req, res) {
   if (!isNaN(req.params.id) ) {
     knex
       .select()
-      .from('UrgencyType')
+      .from('Area')
       .where('id', req.params.id)
       .then((data) => {
         res
@@ -46,18 +54,18 @@ urgencyType.get('/:id', function(req, res) {
 });
 
 // DELETE ONE
-/** http://localhost:8787/api/urgencyType/delete/:id  with method=GET    with method=DELETE **/
-/** http://localhost:8787/api/urgencyType/delete/20**/
+/** http://localhost:8787/api/area/delete/:id  with method=GET    with method=DELETE **/
+/** http://localhost:8787/api/area/delete/20**/
 
-urgencyType.delete("/delete/:id", function(req, res) {
-  knex("UrgencyType")
+area.delete("/delete/:id", function(req, res) {
+  knex("Area")
     .where("id", req.params.id)
     .del()
     .then(data => {
-      if (data == 0) {
+      if (data === 0) {
         res
           .status(404)
-          .send("Invalid row number: " + req.params.id)
+          .send("The column with id: " + req.params.id +" cant be deleted because it doesnt exist in the Database  " )
           .end();
       } else {
         res
@@ -73,40 +81,38 @@ urgencyType.delete("/delete/:id", function(req, res) {
         .end();
     });
 });
-// CREATE urgencyType
-/** http://localhost:8787/api/urgencyType/create/ with method=POST **/
+// CREATE area
+//VALID Area TYPES ARE HIGH, MEDIUM AND LOW
 
-urgencyType.post('/create', function(req, res) {
-  let validUrgencyId = [
-    10, 20, 30
-  ];
-  let validUrgencyName = [
-    "low", "medium", "high"
-  ];
-  if (!req.body.name || !req.body.description) {
+/** http://localhost:8787/api/area/create/ with method=POST **/
+
+area.post('/create', function(req, res) {
+
+  if (!req.body.name || !req.body.description ) {
     res
       .status(400)
-      .send('urgencyType name or description is missing!')
+      .send('area name or description is missing!')
       .end();
-  } else if(req.body.id !== validUrgencyId || req.body.name !== validUrgencyName ) {
+  }/* else if( req.body.isCommonArea !== 0 || req.body.isCommonArea !== 1) {
     res
-      .status(400)
-      .send('Not a valid urgencyType')
+    .status(400)
+      .send('isCommonArea should be boolean'+ req.body.description)
       .end();
-  } else{
+}*/
+  else{
     knex
       .insert(req.body)
-      .into('UrgencyType')
+      .into('Area')
       .then((data) => {
         res.status(200);
         res.send(data);
       })
       .catch((error) => {
-        if (error.errno == 1062) {
+        if (error.errno === 1062) {
           // https://mariadb.com/kb/en/library/mariadb-error-codes/
           res
             .status(409)
-            .send('urgencyType with that name already exists!')
+            .send('area with that name already exists!')
             .end();
         } else {
           res
@@ -119,24 +125,24 @@ urgencyType.post('/create', function(req, res) {
 });
 
 // EDIT ONE
-/** http://localhost:8787/api/category/    with method=PUT **/
-// example: http://localhost:8787/api/category (id in the body)
+/** http://localhost:8787/api/area/edit    with method=PUT **/
+// example: http://localhost:8787/api/area/edit/(id in the body)
 
-urgencyType.put('/edit', function(req, res) {
+area.put('/edit', function(req, res) {
   if (!req.body.id || !req.body.name) {
     res
       .status(400)
-      .send('urgencyType id or name are missing!')
+      .send('area id or name are missing!')
       .end();
   } else {
-    knex('UrgencyType')
+    knex('Area')
       .where('id', req.body.id)
       .update(req.body)
       .then((data) => {
-        if (data == 0) {
+        if (data === 0) {
           res
             .status(404)
-            .send('Invalid row number: ' + req.body.id)
+            .send('Update not successful, ' + data + ' row modified')
             .end();
         } else {
           res
@@ -156,4 +162,4 @@ urgencyType.put('/edit', function(req, res) {
 });
 
 
-export default urgencyType;
+export default area;
