@@ -4,7 +4,7 @@ import knex from "../../db/index";
 const urgencyType = express.Router();
 
 // GET
-/** http://localhost:8787/api/urgencyType/all  with method=GET **/
+/** http://localhost:8989/api/urgencyType/all  with method=GET **/
 
 urgencyType.get("/all", function (req, res) {
   knex
