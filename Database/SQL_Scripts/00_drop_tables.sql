@@ -22,4 +22,4 @@ DROP TABLE IF EXISTS LocationType;
 DROP TABLE IF EXISTS EventType;
 
 -- UrgencyType
-DROP TABLE IF EXISTS UrgencyType; 
+DROP TABLE IF EXISTS UrgencyType;
