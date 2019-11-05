@@ -3,10 +3,10 @@ import knex from "../../db/index";
 
 
 // GET ALL
-// http://localhost:8989/api/user/all METHOD = GET
+// http://localhost:8989/api/users/all METHOD = GET
 const user = express.Router();
 
-user.get("/all", function(req, res) {
+users.get("/all", function(req, res) {
     knex
       .select()
       .from("Event")
@@ -29,9 +29,9 @@ user.get("/all", function(req, res) {
 
 
   // GET ALL user Name by seraching keywords
-  /** http://localhost:8989/api/user/search/abc   with method=GET **/
+  /** http://localhost:8989/api/users/search/abc   with method=GET **/
 
-  user.get("/search/:keyword", function(req, res) {
+  users.get("/search/:keyword", function(req, res) {
 
     let keyword = req.params.keyword;  // just for shorter variable name later
 
