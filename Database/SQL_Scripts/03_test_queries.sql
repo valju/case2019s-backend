@@ -28,6 +28,10 @@ SELECT email from User WHERE email LIKE '%gmail.com';
 DESCRIBE EventType;
 SELECT * FROM EventType;
 
+SELECT description FROM EventType WHERE name LIKE 'Fire';
+
+SELECT * FROM EventType WHERE defaultUrgency IN (SELECT id FROM UrgencyType);
+
 -- UrgencyType
 DESCRIBE UrgencyType;
 SELECT * FROM UrgencyType;
