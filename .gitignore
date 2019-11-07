@@ -1,3 +1,5 @@
+# MACOS files
+.DS_Store
 # VS Coce
 .vscode
 # Each developer's database settings: NOT tracked
