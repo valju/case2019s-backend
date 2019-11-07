@@ -2,11 +2,11 @@ import express from "express";
 
 import urgencyType from './urgencyType'
 import eventType from "./eventType";
-import users from "./users";
+import user from "./user";
 
 const routes = express.Router();
 routes.use('/urgencyType', urgencyType);
 routes.use("/eventType", eventType);
-routes.use("/users", users);
+routes.use("/user", user);
 
 export default routes;
