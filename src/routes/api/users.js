@@ -3,13 +3,13 @@ import knex from "../../db/index";
 
 
 // GET ALL
-// http://localhost:8989/api/user/all METHOD = GET
+// http://localhost:8989/api/users/all METHOD = GET
 const users = express.Router();
 
 users.get("/all", function(req, res) {
     knex
       .select()
-      .from("Event")
+      .from("User")
       .then(data => {
         res
           .status(200)
@@ -29,7 +29,7 @@ users.get("/all", function(req, res) {
 
 
   // GET ALL user Name by seraching keywords
-  /** http://localhost:8989/api/user/search/abc   with method=GET **/
+  /** http://localhost:8989/api/users/search/abc   with method=GET **/
 
   users.get("/search/:keyword", function(req, res) {
 
