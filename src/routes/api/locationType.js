@@ -6,7 +6,7 @@ const locationType = express.Router();
 locationType.get("/all",function(req,res){
     knex
     .select()
-    .from("locationType")
+    .from("LocationType")
     .then(data => res.status(200).json(data))
     .catch(err =>res.status(500).json({err:err.message}));
 });
