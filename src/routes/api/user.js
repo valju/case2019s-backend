@@ -67,4 +67,48 @@ user.get("/search/:keyword", function (req, res) {
   }
 });
 
+// ADD NEW USER
+/** http://localhost:8989/api/user/   with method=POST **/
+user.post("/", (req, res) => {
+  const { firstName, lastName, email, isAdmin } = req.body
+  if (firstName && lastName && email && typeof isAdmin === 'boolean') {
+    knex
+      .insert(req.body)
+      .into("User")
+      .then(data => {
+        res.status(200);
+        res.send({
+          id: data,
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+          isAdmin: isAdmin
+        })
+      })
+      .catch(error => {
+        /* error.errno
+        https://mariadb.com/kb/en/library/mariadb-error-codes/
+        */
+        switch (error.errno) {
+          case 1062:
+            res.status(409) // 409 Conflict
+            res.send("Conflick: User with that name already exists!");
+          case 1054:
+            res.status(409);
+            res.send("error in spelling [either in 'firstName' and/or in 'lastName' and/or in 'email' and/or in 'isAdmin' field]")
+          default: {
+            res.status(400);
+            res.send(`Database error, Error number: ${error.errno}`)
+          }
+        }
+      })
+  }
+  else {
+    res.status(400);
+    res.end(JSON.stringify({
+      error: "first name and/or last name and/or email and/or isAdmin is missing."
+    })
+    )
+  }
+})
 export default user;
