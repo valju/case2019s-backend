@@ -23,6 +23,34 @@ user.get("/all", function (req, res) {
     });
 });
 
+//GET ONE
+
+user.get("/:id", (req, res) => {
+  knex
+    .select()
+    .from("User")
+    .where("id", req.params.id)
+    .then(data => {
+      if (data.length == 0) {
+        res
+          .status(404)
+          .send("Invalid row number: " + req.params.id)
+          .end();
+      } else {
+        res
+          .status(200)
+          .send(data)
+          .end();
+      }
+    })
+    .catch(error => {
+      res
+        .status(500)
+        .send("Database error: " + error.errno)
+        .end();
+    });
+});
+
 // GET ALL user Name by seraching keywords
 /** http://localhost:8989/api/user/search/abc   with method=GET **/
 user.get("/search/:keyword", function (req, res) {
