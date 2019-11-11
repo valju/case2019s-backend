@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "34d66ee6-5376-4a7c-888f-612e84e18158",
+		"name": "LocationTypes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"item": [
+				{
+					"name": "http://localhost:8989/api/locationType/all GET-ALL-OK",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/locationType/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"locationType",
+								"all"
+							]
+						},
+						"description": "Testing successful case to get all location types."
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8989/api/locationType/all GET-ALL-X-FAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8989/api/locationType/alll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8989",
+							"path": [
+								"api",
+								"locationType",
+								"alll"
+							]
+						},
+						"description": "Testing with the wrong path http://localhost:8989/api/locationType/alll\nto check fail case."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
