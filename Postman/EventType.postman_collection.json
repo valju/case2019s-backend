@@ -1,15 +1,33 @@
 {
 	"info": {
-		"_postman_id": "ab0a7e63-587f-4a87-9d0c-de523a80c401",
+		"_postman_id": "996d740e-c589-4514-879f-86fbb0b2df87",
 		"name": "EventType",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "http://localhost:8989/api/eventType/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "http://localhost:8989/api/eventType/all",
 					"protocol": "http",
@@ -22,10 +40,130 @@
 						"eventType",
 						"all"
 					]
-				}
+				},
+				"description": "get all EventType"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/11",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						"11"
+					]
+				},
+				"description": "get one EventType by id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/aaa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/aaa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						"aaa"
+					]
+				},
+				"description": "get EventType by id,  FAILED id must be a number"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/101",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						"101"
+					]
+				},
+				"description": " get one EventType by id, FAILED id does not exist"
 			},
 			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
