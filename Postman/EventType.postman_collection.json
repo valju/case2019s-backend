@@ -164,6 +164,180 @@
 				"description": " get one EventType by id, FAILED id does not exist"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/11 ",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						"11"
+					]
+				},
+				"description": "Delete eventType by id - X eventType has foreign key constraint"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/aa",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/aa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						"aa"
+					]
+				},
+				"description": "Delete eventType by id - X, invalid row number"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/16",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						"16"
+					]
+				},
+				"description": "EventType delete by id - OK"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/1001",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						"1001"
+					]
+				},
+				"description": "delete eventType - X id does not existing"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"jhkjkh\",\n\t\"description\": \"jhgjkkh\",\n\t\"defaultUrgency\": 20\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						""
+					]
+				},
+				"description": "add new eventType"
+			},
+			"response": []
 		}
 	]
 }

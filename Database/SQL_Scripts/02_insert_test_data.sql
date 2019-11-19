@@ -15,7 +15,10 @@ VALUES
 ('Broken heating system', 'Heating system does not work properly, causing the indoor temperature to decrease', 20),
 ('Lost electricity', 'Electricity system does not work properly, no electric in some apartments', 30),
 ('Ventilation', 'Ventilation is broken, room air is stuffed', 20),
-('Fire', NULL, 30);
+('Fire', NULL, 30),
+('EventType without foreign key constraint', NULL, 30);
+
+
 
 -- LocationType
 INSERT INTO LocationType
