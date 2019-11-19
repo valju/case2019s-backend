@@ -13,7 +13,16 @@ location.get("/all", function (req, res) {
 
 // GET ONE
 location.get("/:id", function (req, res) {
-  knex("Location")
+  if(isNaN(req.params.id)){
+    res.status(441)
+    .send(`Id should be number and this is not: ${req.params.id}`)
+    .end();
+  }else if(req.params.id < 1){
+    res.status(442)
+    .send(`Id should be >= 1 and this is not: ${req.params.id}`)
+    .end()
+  }else {  
+    knex("Location")
     .where("id", req.params.id)
     .then(data => {
       if (data.length == 0) {
@@ -34,6 +43,7 @@ location.get("/:id", function (req, res) {
         .send("Database error: " + error.errno)
         .end();
     });
+   }
 });
 
 // DELETE ONE
