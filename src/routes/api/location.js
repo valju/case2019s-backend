@@ -13,63 +13,73 @@ location.get("/all", function (req, res) {
 
 // GET ONE
 location.get("/:id", function (req, res) {
-  if(isNaN(req.params.id)){
+  if (isNaN(req.params.id)) {
     res.status(441)
-    .send(`Id should be number and this is not: ${req.params.id}`)
-    .end();
-  }else if(req.params.id < 1){
+      .send(`Id should be number and this is not: ${req.params.id}`)
+      .end();
+  } else if (req.params.id < 1) {
     res.status(442)
-    .send(`Id should be >= 1 and this is not: ${req.params.id}`)
-    .end()
-  }else {  
+      .send(`Id should be >= 1 and this is not: ${req.params.id}`)
+      .end()
+  } else {
     knex("Location")
-    .where("id", req.params.id)
-    .then(data => {
-      if (data.length == 0) {
+      .where("id", req.params.id)
+      .then(data => {
+        if (data.length == 0) {
+          res
+            .status(404)
+            .send("Invalid row number: " + req.params.id)
+            .end();
+        } else {
+          res
+            .status(200)
+            .send(data)
+            .end();
+        }
+      })
+      .catch(error => {
         res
-          .status(404)
-          .send("Invalid row number: " + req.params.id)
+          .status(500)
+          .send("Database error: " + error.errno)
           .end();
-      } else {
-        res
-          .status(200)
-          .send(data)
-          .end();
-      }
-    })
-    .catch(error => {
-      res
-        .status(500)
-        .send("Database error: " + error.errno)
-        .end();
-    });
-   }
+      });
+  }
 });
 
 // DELETE ONE
-location.delete("/:id", function (req, res){
-  knex("Location")
-  .where("id", req.params.id)
-  .del()
-  .then(data => {
-    if (data == 0) {
-      res
-        .status(404)
-        .send("Invalid row number: " + req.params.id)
-        .end();
-    } else {
-      res
-        .status(200)
-        .send("Delete successful! Count of deleted rows: " + data)
-        .end();
-    }
-  })
-  .catch(error => {
-    res
-      .status(500)
-      .send("Database error: " + error.errno)
+location.delete("/:id", function (req, res) {
+  if (isNaN(req.params.id)) {
+    res.status(441)
+      .send(`Id should be number and this is not: ${req.params.id}`)
       .end();
-  });
+  } else if (req.params.id < 1) {
+    res.status(442)
+      .send(`Id should be >= 1 and this is not: ${req.params.id}`)
+      .end()
+  } else {
+    knex("Location")
+      .where("id", req.params.id)
+      .del()
+      .then(data => {
+        if (data == 0) {
+          res
+            .status(404)
+            .send("Invalid row number: " + req.params.id)
+            .end();
+        } else {
+          res
+            .status(200)
+            .send("Delete successful! Count of deleted rows: " + data)
+            .end();
+        }
+      })
+      .catch(error => {
+        res
+          .status(500)
+          .send("Database error: " + error.errno)
+          .end();
+      });
+  }
 });
 
 export default location;
