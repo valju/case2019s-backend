@@ -1,31 +1,156 @@
 {
-	"info": {
-		"_postman_id": "af3bec07-f0a8-495b-bb3c-db5637aaf5bb",
-		"name": "UserAll",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "http://localhost:8989/api/user/all ok",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8989/api/user/all",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8989",
-					"path": [
-						"api",
-						"user",
-						"all"
-					]
-				}
-			},
-			"response": []
-		}
-	],
-	"protocolProfileBehavior": {}
+  "info": {
+    "_postman_id": "af3bec07-f0a8-495b-bb3c-db5637aaf5bb",
+    "name": "UserAll",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8989/api/user/all GET-ALL-OK",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8989/api/user/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8989",
+          "path": [
+            "api",
+            "user",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET by id 200 OK",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8989/api/user/1001",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8989",
+          "path": [
+            "api",
+            "user",
+            "1001"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test Get by id that doesn't exist, not found 404",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8989/api/user/10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8989",
+          "path": [
+            "api",
+            "user",
+            "10"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8989/api/user/ POST sucessful",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"john.doe@gmail.com\",\n    \"isAdmin\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": ":8989/api/user/",
+          "host": [
+            ""
+          ],
+          "port": "8989",
+          "path": [
+            "api",
+            "user",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
 }

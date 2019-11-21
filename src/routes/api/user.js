@@ -95,6 +95,36 @@ user.get("/search/:keyword", function (req, res) {
   }
 });
 
+// user by id --
+/** http://localhost:8989/api/user/    with method=GET **/
+// example: http://localhost:8989/api/user/1001
+
+user.get("/:id", function(req, res) {
+	knex
+		.select()
+		.from("User")
+		.where("id", req.params.id)
+		.then(data => {
+			if (data.length !== 1) {
+				res
+					.status(404)
+					.send("Invalid row number: " + req.params.id)
+					.end();
+			} else {
+				res
+					.status(200)
+          .send(data)
+					.end();
+			}
+		})
+		.catch(error => {
+			res
+				.status(500)
+				.send("Database error: " + error.errno)
+				.end();
+		});
+});
+
 // ADD NEW USER
 /** http://localhost:8989/api/user/   with method=POST **/
 user.post("/", (req, res) => {
