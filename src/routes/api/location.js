@@ -3,7 +3,6 @@ import knex from "../../db/index";
 
 const location = express.Router();
 
-
 // GET ALL
 location.get("/all", function (req, res) {
   knex("Location")
