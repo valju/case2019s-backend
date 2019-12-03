@@ -338,6 +338,80 @@
 				"description": "add new eventType"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Lost electricity\",\n\t\"description\": \"Electricity system does not work properly, no electric in some apartments\",\n\t\"defaultUrgency\": 10\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						""
+					]
+				},
+				"description": "edit existing eventType - OK"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/api/eventType/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"description\": \"Electricity system does not work properly, no electric in some apartments\",\n\t\"defaultUrgency\": 10\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8989/api/eventType/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"eventType",
+						""
+					]
+				},
+				"description": "edit eventType - X (name missing)"
+			},
+			"response": []
 		}
 	]
 }

@@ -20,7 +20,7 @@ SELECT email from User WHERE email LIKE '%gmail.com';
 
 -- Location
 
--- Area
+-- Area 
 
 -- LocationType
 

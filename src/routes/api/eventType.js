@@ -142,4 +142,48 @@ eventType.post("/", function (req, res) {
 });
 
 
+
+// EDIT ONE
+/** http://localhost:8989/api/eventType/    with method=PUT **/
+
+
+eventType.put("/", function (req, res) {
+  if (!req.body.name) {
+    res
+      .status(400)
+      .send("name is missing!")
+      .end();
+  } else {
+    knex("EventType")
+      .where("name", req.body.name)
+      .update(req.body)
+      .then(data => {
+        if (data == 0) {
+          res
+            .status(404)
+            .send("Invalid row number: " + req.body.id)
+            .end();
+        } else {
+          res
+            .status(200)
+            .send("Update successful! Count of modified rows: " + data)
+            .end();
+        }
+      })
+      .catch(error => {
+        if (error.errno == 1062) {
+          res
+            .status(409)
+            .send("EventType with that name already exists!")
+            .end();
+        } else {
+          res
+            .status(500)
+            .send("Database error: " + error.errno)
+            .end();
+        }
+      });
+  }
+});
+
 export default eventType;
