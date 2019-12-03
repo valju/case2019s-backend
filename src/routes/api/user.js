@@ -99,30 +99,30 @@ user.get("/search/:keyword", function (req, res) {
 /** http://localhost:8989/api/user/    with method=GET **/
 // example: http://localhost:8989/api/user/1001
 
-user.get("/:id", function(req, res) {
-	knex
-		.select()
-		.from("User")
-		.where("id", req.params.id)
-		.then(data => {
-			if (data.length !== 1) {
-				res
-					.status(404)
-					.send("Invalid row number: " + req.params.id)
-					.end();
-			} else {
-				res
-					.status(200)
+user.get("/:id", function (req, res) {
+  knex
+    .select()
+    .from("User")
+    .where("id", req.params.id)
+    .then(data => {
+      if (data.length !== 1) {
+        res
+          .status(404)
+          .send("Invalid row number: " + req.params.id)
+          .end();
+      } else {
+        res
+          .status(200)
           .send(data)
-					.end();
-			}
-		})
-		.catch(error => {
-			res
-				.status(500)
-				.send("Database error: " + error.errno)
-				.end();
-		});
+          .end();
+      }
+    })
+    .catch(error => {
+      res
+        .status(500)
+        .send("Database error: " + error.errno)
+        .end();
+    });
 });
 
 // ADD NEW USER
@@ -169,4 +169,68 @@ user.post("/", (req, res) => {
     )
   }
 })
+
+// EDIT A User
+/** http://localhost:8989/api/user/    with method=PUT **/
+// example: http://localhost:8989/api/user (id, firstName, lastName, email and isAdmin in the body)
+
+user.put("/", (req, res) => {
+  console.log("req.body", req.body)
+  const { id, firstName, lastName, email, isAdmin } = req.body
+
+  if (firstName && lastName && email && typeof isAdmin === 'boolean') {
+    knex("User")
+      .where("id", id)
+      .update(req.body)
+      .then(data => {
+        if (data == 0) {
+          res
+            .status(404)
+            .send("Update not successful, " + data + " row modified")
+            .end();
+        } else {
+          res
+            .status(200)
+            .send("Successfully update member data, " + data + " row modified")
+            .end();
+        }
+      })
+      .catch(error => {
+        switch (error.errno) {
+          case 1062: {
+            // https://mariadb.com/kb/en/library/mariadb-error-codes/
+            res.status(409);
+            res.send("Conflict: User with that email already exists!");
+          }
+          case 1054: {
+            res.status(409);
+            //to handle error for backend only
+            res.send(
+              "error in spelling [either in 'firstName' and/or in 'lastname' and or in 'email' and or in 'isAdmin']."
+            );
+          }
+          default:
+            res.status(500);
+            res.send("Database error, Error number: " + error.errno);
+        }
+      });
+  } else {
+    res.status(400);
+    res.end(
+      JSON.stringify({
+        error: "first name and /or last name and/or email and/or is admin is missing."
+      })
+    );
+  }
+});
+/* Schema for user PUT is like this
+{
+    "id": xxxx,
+    "firstName": "name",
+    "lastName": "name",
+    "email": "email@gmail.com",
+    "isAdmin": boolean
+}
+*/
+
 export default user;

@@ -150,6 +150,42 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "http://localhost:8989/api/user PUT sucessful",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 1001,\n    \"firstName\": \"John\",\n    \"lastName\": \"win\",\n    \"email\": \"aaaa@gmail.com\",\n    \"isAdmin\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8989/api/user",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8989",
+          "path": [
+            "api",
+            "user"
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "protocolProfileBehavior": {}
