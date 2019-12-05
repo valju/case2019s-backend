@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "8f4b324d-8dc0-4933-add2-9c2f17688e02",
+		"name": "AreaUser.postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8989/api/areaUser/104/1003",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "areaId",
+							"value": "105",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "1002",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8989/api/areaUser/",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"areaUser",
+						""
+					]
+				},
+				"description": "areauser get by id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8989/api/areaUser/105/1002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8989/api/areaUser/105/1002",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"areaUser",
+						"105",
+						"1002"
+					]
+				},
+				"description": "Get request By User and area ID"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8989/api/areaUser/105/1003",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8989/api/areaUser/105/1003",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"areaUser",
+						"105",
+						"1003"
+					]
+				},
+				"description": "delete request by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8989/api/areaUser/105/1003",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8989/api/areaUser/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"api",
+						"areaUser",
+						"all"
+					]
+				},
+				"description": "get all areausers union of area and users data"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
