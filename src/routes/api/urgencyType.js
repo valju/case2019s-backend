@@ -15,4 +15,16 @@ urgencyType.get("/all", function (req, res) {
 
 });
 
-export default urgencyType;
+urgencyType.get("/:id",function(req,res){
+  knex
+  .select("id","name","description")
+  .from("UrgencyType")
+  .where('id',req.params.id)
+  .then(data=>res.status(200).json(data))
+  .catch(err=>res.status(500).json({error:err.message}));
+});
+
+
+
+
+export  default urgencyType;
